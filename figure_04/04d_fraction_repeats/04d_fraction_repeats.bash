@@ -24,6 +24,10 @@
 #     -t: the threshold of repeat occurrence to consider (=5).
 #     -w: window size (in bp) to consider for repeat occupancy (=100,000)
 #     -i: increment (in bp) of the window (=100,000)
+#
+# requires:
+#     RepeatScout in PATH
+#     RepeatMasker in PATH
 python3 RepeatScout_repeat_occupancy_table.py -f Dpac.genomic.fasta -p Dpac -l 14 -t 5 -w 100000 -i 100000
 
 ##################################################################
