@@ -46,10 +46,10 @@ hicPCA --matrix Dco_hiC_rep1.bsorted_100000.correctedICE.h5 --outputFileName Dco
 # 150000               0.01
 # ...etc.-
 # PCA_bedgraph_converter.py takes the average of all values within 100,000-bp windows and plots the average in the middle of the interval (ie. %100,000 = 50,000)
-# nxDipCoro1_1.curated_primary.fa is the D. coronatus genome fasta
+# Dcor.genomic.fasta is the D. coronatus genome fasta
 # 
 # The command below should give the files "Dcor.SUPER_1.PC1.window100000.increment100000.txt" and "Dcor.SUPER_2.PC1.window100000.increment100000.txt"
-python3 PCA_bedgraph_converter.py -f nxDipCoro1_1.curated_primary.fa -b Dco_hiC_rep1.bsorted_100000.correctedICE.pca1.bedgraph -x scaffold_position -y PC1 -p Dcor
+python3 PCA_bedgraph_converter.py -f Dcor.genomic.fasta -b Dco_hiC_rep1.bsorted_100000.correctedICE.pca1.bedgraph -x scaffold_position -y PC1 -p Dcor
 
 
 ################################################################
@@ -104,7 +104,8 @@ conda deactivate
 # 150000               0.01
 # ...etc.-
 # PCA_bedgraph_converter.py takes the average of all values within 100,000-bp windows and plots the average in the middle of the interval (ie. %100,000 = 50,000)
-# Dpa-canu-het00c-YaHS-v202304.fasta is the genome file
+# Dpac.genomic.fasta is the genome file
 # 
 # The command below should give the files "Dpac.scaffold_1.PC3.window100000.increment100000.txt" and "Dpac.scaffold_2.PC3.window100000.increment100000.txt"
-python3 PCA_bedgraph_converter.py -p Dpac -f Dpa-canu-het00c-YaHS-v202304.fasta -b Dpa-canu-het00c-YaHS-v202304_100000.correctedICE.pca3.bedgraph -w 100000 -i 100000 -x scaffold_position -y PC3
+
+python3 PCA_bedgraph_converter.py -p Dpac -f Dpac.genomic.fasta -b Dpa-canu-het00c-YaHS-v202304_100000.correctedICE.pca3.bedgraph -w 100000 -i 100000 -x scaffold_position -y PC3
