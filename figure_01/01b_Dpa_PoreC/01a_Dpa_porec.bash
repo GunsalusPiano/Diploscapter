@@ -10,4 +10,6 @@ snakemake --use-conda --cores 16 juicer
 snakemake --use-conda --cores 16 cool
 
 # Plot the HiC matrix
+# using the hicexplorer suite of programs (https://github.com/deeptools/HiCExplorer)
+conda activate hicexplorer-env
 hicPlotMatrix --matrix NlaIII_run01_Dpa-canu-het00c-YaHS-v202304-hethomosep_unphased_250000.cool --outFileName NlaIII_run01_Dpa-canu-het00c-YaHS-v202304-hethomosep_unphased_250000.range_0-35.colorMap_binary.pdf --chromosomeOrder SCAFFOLD_HOM SCAFFOLD_1_HET SCAFFOLD_2_HET --vMin 0 --vMax 35 --colorMap binary
