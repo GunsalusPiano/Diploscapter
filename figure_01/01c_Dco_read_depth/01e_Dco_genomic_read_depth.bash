@@ -21,8 +21,9 @@ samtools depth -aa -o ${ALIGNMENTS}.sorted.samtools_depth.txt -@ 14 ${ALIGNMENTS
 
 # This depth file is very big as it contains a value for every genomic position
 # Take the arithmetic mean of depths every 100,000 bps using Python script samtools_depth_output_simplifier_v4.py
-python3 samtools_depth_output_simplifier_v4.py -d ${ALIGNMENT}.sorted.samtools_depth.txt -w 100000
+python3 samtools_depth_output_simplifier_v4.py -d ${ALIGNMENTS}.sorted.samtools_depth.txt -w 100000
 
 # The output should be ${ALIGNMENT}.sorted.samtools_depth.window100000.txt
 
 # Use R to graph the read coverage
+
