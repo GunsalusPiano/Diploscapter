@@ -5,4 +5,5 @@
 # Enter the file name for the samtools depth output when prompted.
 # ie Dpa.aln.sorted.samtools_depth.txt
 
-python3 samtools_dpeth_parser.py
+
+python3 samtools_depth_parser.py
