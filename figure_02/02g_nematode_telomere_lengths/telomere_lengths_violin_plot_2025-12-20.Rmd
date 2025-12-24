@@ -19,8 +19,6 @@ selected_telomeres_df = read_tsv("all_nematode_telomeres.headerless.txt", col_na
 
 
 telomere_dotplot_horizontal <- ggplot(selected_telomeres_df, aes(description, telomere_length)) +
-                                #geom_boxplot(width = 0.5,
-                                #   linewidth = 0.2) +
                                 geom_dotplot(binaxis = "y",
                                    stackdir = "center",
                                    fill = "black",
@@ -43,25 +41,12 @@ telomere_dotplot_horizontal <- ggplot(selected_telomeres_df, aes(description, te
                                                             "D. coronatus PDL0010",
                                                             "D. pachys PF1309")) +
                                 scale_y_continuous(limits = c(0,8000)) +
-                                #stat_n_text() +
-                                #stat_median_iqr_text() +
-                                #geom_text(data = telomere_stats, aes(description, number_of_reads, label = number_of_reads),
-                                #          position = position_dodge(width = 0.8), size = 3, vjust = -0.5) +
-                                #geom_dotplot(binaxis='y', stackdir='center', dotsize = .5) +
-                                #scale_fill_discrete(breaks=c("D. pachys",
-                                #                            "C. elegans",
-                                #                            "C. briggsae",
-                                #                            "P. pacificus",
-                                #                            "O. tipulae")) +
-                                #scale_fill_brewer(palette="Pastel1")  +
                                 theme(legend.key.size = unit(0.2, 'cm')) +
                                 coord_flip() +
                                 theme(axis.text.x = element_text(size = axis_text_size), axis.text.y = element_text(size = axis_text_size)) +
                                 theme(axis.title.x = element_text(size = axis_text_size), axis.title.y = element_text(size = axis_text_size)) +
                                 theme(legend.text=element_text(size=axis_text_size), legend.title=element_text(size=axis_text_size))
                                 
-                                #scale_fill_brewer(palette="BuPu")
-
 
 telomere_dotplot_horizontal
 
