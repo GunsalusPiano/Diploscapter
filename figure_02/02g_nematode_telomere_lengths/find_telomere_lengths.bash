@@ -1,4 +1,3 @@
-```bash
 # these commands will use worm_telomere_lengths_extractor_v3.py to extract telomere lengths from long-read libraries
 
 # This is how worm_telomere_lengths_extractor_v3.py extracts C. elegans VC2010/PD1074 telomere lengths from the Yoshimura PacBio dataset
@@ -42,4 +41,3 @@ python3 worm_telomere_lengths_extractor_v3.py -l Dpachys_porechopped.fasta -t TA
 
 # for D. coronatus, we used the D. coronatus PDL0010 PacBio HiFi reads.
 python3 worm_telomere_lengths_extractor_v3.py -l /mnt/e/sequence_scratch/diploscapter_coronatus_PDL0010/reads/raw_reads/nxDipCoro1_hifi.fasta -t TAAGGGTAAGGC -n 1000 -c 20 -s Dco_subtelomeres.fasta -w 20 -d 50 -T TAAGGG,TAAGGC -i library_info.txt -r
-```
