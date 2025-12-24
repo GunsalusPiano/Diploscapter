@@ -1,0 +1,6 @@
+accession	D. coronatus TBD
+species	D. coronatus
+strain	PDL0010
+description	D. coronatus PacBio HiFi genomic library (this work)
+file_location	/mnt/e/sequence_scratch/diploscapter_coronatus_PDL0010/reads/raw_reads/nxDipCoro1_hifi.fasta
+subtel_location	/mnt/e/2023_archive/2023-05-21_Dcoronatus_subtelomere_search
