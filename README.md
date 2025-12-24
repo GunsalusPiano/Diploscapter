@@ -1,2 +1,2 @@
 # Diploscapter
-Analysis of Diploscapter genomes
+Analysis of *Diploscapter* genomes.
