@@ -23,4 +23,4 @@ The plots produced are in ```Dpa_chrom_end_depth_and_subtel_repeats_wide_short.p
 and in ```Dco_chrom_end_depth_and_subtel_repeats_skinny_short.pdf```
 <img width="1451" height="557" alt="image" src="https://github.com/user-attachments/assets/0d4a0f5e-2946-4d9c-b4fc-8937a3c10d64" />
 
-which were then lightly edited for clarity in Adobe Illustrator before publication.
+These were lightly edited for clarity in Adobe Illustrator before publication.
