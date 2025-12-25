@@ -1,0 +1,4 @@
+accession	D. pachys TBD
+species	D. pachys
+strain	PF1309
+description	D. pachys ONT R9.4 genomic library (this work)

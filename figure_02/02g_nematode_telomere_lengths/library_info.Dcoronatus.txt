@@ -1,0 +1,4 @@
+accession	D. coronatus TBD
+species	D. coronatus
+strain	PDL0010
+description	D. coronatus PacBio HiFi genomic library (this work)
