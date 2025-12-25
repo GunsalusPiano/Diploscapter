@@ -23,7 +23,7 @@
 # (7) figure out if the extent of the telomere from step (5) matches step (6). Because of sequence errors etc they are often slightly different. This difference/leeway is specified
 #     using the -d flag. Only if the difference is < this value is the telomere length considered.
 # (8) the telomere lengths are reported for reads using values from step 6, in the *.telomereLengths.txt file.
-# (9) extra info can be provided in a text file using the -i (info) flag.
+# (9) extra info about the library can be provided in a text file using the -i (info) flag.
 
 python3 worm_telomere_lengths_extractor_v3.py -a SRR7594465 -t TTAGGC -n 1000 -c 20 -s c_elegans.PRJNA13758.WS285.genomic.all_subtel2000.fasta -w 20 -d 50 -i library_info.SRR7594465.txt
 
