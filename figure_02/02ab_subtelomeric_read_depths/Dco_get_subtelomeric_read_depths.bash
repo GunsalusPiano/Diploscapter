@@ -7,9 +7,10 @@
 #
 # the position values are 1-based, inclusive on both ends.
 
-# from aligning Dco HiFi genomic reads to the assembly (data from Fig. 1E)
+# from aligning Dco HiFi genomic reads to the assembly (data from Fig. 1E, = Dco.aln.sorted.samtools_depth.txt)
 # use samtools_depth_output_simplifier_v4.py to simplify read depth values, and only focus on the terminal 40 kb
 # specified in the Dco_chromosome_ranges.txt
 python3 samtools_depth_output_simplifier_v4.py -d Dco.aln.sorted.samtools_depth.txt -w 10 -c Dco_chromosome_ranges.txt
+
 
 # proceed to plot the read depths using R ggplot
