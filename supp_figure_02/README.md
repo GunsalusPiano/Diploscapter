@@ -1,4 +1,4 @@
-**Supplemental Figure 2: *D. coronatus* telomeric sequences are added to various points along the most distal subtelomeric repeat unit.**
+# Supplemental Figure 2: *D. coronatus* telomeric sequences are added to various points along the most distal subtelomeric repeat unit.
 
 Run the Diploscapter_coronatus_telomere_gggenomes_visualization_2025-12-16.py code. This code requires the ```*sorted.coords```, ```*.telOccupancyDrop.txt```, and ```*.telomereScore20.fasta``` files generated for **Fig. 2G**.
 
