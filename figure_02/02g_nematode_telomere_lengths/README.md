@@ -4,7 +4,8 @@
     - attempts to match these reads to the known subtelomeric sequences
     - estimates the length of the telomeric array. If this coincides with where the subtelomere ends, then report the telomere length estimate.
 
-2.  Use the R code in ```telomere_lengths_violin_plot.md``` to generate a plot of the distribution of telomere lengths. The resulting graph:
+2.  Use the R code in ```telomere_lengths_violin_plot.md``` to generate a plot of the distribution of telomere lengths. The resulting graph is below.
 
 <img width="1488" height="637" alt="image" src="https://github.com/user-attachments/assets/37606c5e-f998-4c7d-b91b-cc79e187ac43" />
 
+(Also in ```telomere_lengths_dot_box_plots_horizontal_2025-12.pdf```)
