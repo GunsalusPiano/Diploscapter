@@ -7,7 +7,7 @@
 # (2) worm_telomere_lengths_extractor_v3.py runs TideHunter (https://github.com/Xinglab/TideHunter) to identify tandem repeats in the reads and their positions
 #     - produces "SRR7594465.TideHunter_6-mers.txt" output to record the 6-mer repeats and their positions.
 #     - the telomeric motif is set by the -t flag.
-# (3) worm_telomere_lengths_extractor_v3.py assigns a 'teloscore' to each read, which is a dot product of occupancy and penalty_reward arrays, given "TTAGGC" telomeric motif:
+# (3) worm_telomere_lengths_extractor_v3.py assigns a 'teloscore' to each read, which is a dot product of occupancy and penalty_reward arrays, given "TTAGGC" telomeric motif. For example:
 #     read sequence:      a  c  t  T  T  A  G  G  C  T  T  A  G  G  C  t  g  t  g  c  a  t  c  t  a  a  a  c  c  a  a  a  t  t  t  a  T  T  A  G  G  C  T  T  A  G  G  C
 #     occupancy:        [ 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
 #     penalty_reward:   [-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
@@ -28,14 +28,15 @@
 python3 worm_telomere_lengths_extractor_v3.py -a SRR7594465 -t TTAGGC -n 1000 -c 20 -s c_elegans.PRJNA13758.WS285.genomic.all_subtel2000.fasta -w 20 -d 50 -i library_info.SRR7594465.txt
 
 
-# similarly for C. elegans CB4856 (SRA runs SRR8599835 to SRR8599843, Kim & al. https://pubmed.ncbi.nlm.nih.gov/31123081/). Concatenate these libraries first > SRR8599835-43.fasta
-# and for C. briggsae QX1410 (SRA run SRR17074503, Stevens & al. https://pubmed.ncbi.nlm.nih.gov/35348662/)
-python3 worm_telomere_lengths_extractor_v3.py -a SRR8599835-43.fasta -t TTAGGC -n 1000 -c 20 -s Celegans_CB4856_GCA_004526295.1_ASM452629v1_genomic.identifiable_subtel2000.fasta -w 20 -d 50 -i library_info.SRR8599835-43.txt
-python3 worm_telomere_lengths_extractor_v3.py -a SRR17074503.fasta -t TTAGGC -n 1000 -c 20 -s Cbriggsae_QX1410_GCA_021491975.1_ASM2149197v1_genomic.identifiable_subtels.fasta -w 20 -d 50 -i library_info.SRR17074503.txt
+# similarly for C. elegans CB4856 (SRA runs SRR8599835 to SRR8599843, Kim & al. https://pubmed.ncbi.nlm.nih.gov/31123081/). Concatenate these libraries first > SRR8599835-43.fasta and
+# save as a local library. We can use this local library by invoking the -l flag.
+# Analyze the C. briggsae QX1410 reads similarly (SRA run SRR17074503, Stevens & al. https://pubmed.ncbi.nlm.nih.gov/35348662/)
+python3 worm_telomere_lengths_extractor_v3.py -l SRR8599835-43.fasta -t TTAGGC -n 1000 -c 20 -s Celegans_CB4856_GCA_004526295.1_ASM452629v1_genomic.identifiable_subtel2000.fasta -w 20 -d 50 -i library_info.SRR8599835-43.txt
+python3 worm_telomere_lengths_extractor_v3.py -a SRR17074503 -t TTAGGC -n 1000 -c 20 -s Cbriggsae_QX1410_GCA_021491975.1_ASM2149197v1_genomic.identifiable_subtels.fasta -w 20 -d 50 -i library_info.SRR17074503.txt
 
 
 # for Diploscapter, the worm_telomere_lengths_extractor_v3.py has an -r flag that enables the search for repetitive subtelomeres - as is the case in D. pachys and D. coronatus.
-# for D. pachys, we used the Porechopped D. pachys PF1309 ONT R9.4 genomic reads. The -l flag specifies a local library.
+# for D. pachys, we used the Porechopped D. pachys PF1309 ONT R9.4 genomic reads.
 # the -T flag specifies that the telomeric motifs are TAAGGG and TAAGGC, rather than the TAAGGGTAAGGC that TideHunter used to find tandem repeats.
 python3 worm_telomere_lengths_extractor_v3.py -l Dpachys_porechopped.fasta -t TAAGGGTAAGGC -n 1000 -c 20 -s Dpa_subtelomeres.fasta -w 20 -d 50 -T TAAGGG,TAAGGC -i library_info.Dpachys.txt -r
 
