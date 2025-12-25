@@ -1,6 +1,0 @@
-accession	D. pachys TBD
-species	D. pachys
-strain	PF1309
-description	D. pachys ONT R9.4 genomic library (this work)
-file_location	/mnt/e/sequence_scratch/ONT-data/Dpachys_FAL80830/Dpachys_porechopped.fasta
-subtel_location	/mnt/e/sequence_scratch/ONT-data/Dpachys_FAL80830/2023-05-30_telomere_length_analysis/ (end points have been nudged)
