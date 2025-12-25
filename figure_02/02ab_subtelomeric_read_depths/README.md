@@ -15,7 +15,7 @@ NB. "scaffold_1" and "scaffold_2" were the names of DpaA and DpaB respectively i
 
 ## For both species:
 
-The R code in ```fig_02_subtel_read_depth_and_repeat_annotations(2024-12).Rmd``` takes the read depths from above, as well as subtelomere unit boundaries annotated by hand (```Dpa_subtelomere_features.txt``` and ```Dco_subtelomere_features.txt```), and produces the read depth plots on top of subtelomere repeat schematics. The R code uses ```ggplot2``` and the ```gggenes``` R packages (https://github.com/wilkox/gggenes).
+The R code in ```fig_02_subtel_read_depth_and_repeat_annotations-2024-12-.md``` takes the read depths from above, as well as subtelomere unit boundaries annotated by hand (```Dpa_subtelomere_features.txt``` and ```Dco_subtelomere_features.txt```), and produces the read depth plots on top of subtelomere repeat schematics. The R code uses ```ggplot2``` and the ```gggenes``` R packages (https://github.com/wilkox/gggenes).
 
 The plots produced are in ```Dpa_chrom_end_depth_and_subtel_repeats_wide_short.pdf```
 <img width="1481" height="516" alt="image" src="https://github.com/user-attachments/assets/3258dd36-66ec-45b0-9d1f-d94d1bc51945" />
