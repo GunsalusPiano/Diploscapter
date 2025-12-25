@@ -1,0 +1,4 @@
+accession	SRR8599835-SRR8599843
+species	C. elegans
+strain	CB4856
+description	C. elegans CB4856 re-sequencing (Kim 2019)

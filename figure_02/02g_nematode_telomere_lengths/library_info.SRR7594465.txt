@@ -1,0 +1,4 @@
+accession	SRR7594465
+species	C. elegans
+strain	VC2010/PD1074
+description	C. elegans VC2010/PD1074 re-sequencing (Yoshimura 2019)
