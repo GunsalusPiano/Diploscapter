@@ -9,7 +9,7 @@ NB. At the time of assembly, DcoA was given the name SUPER_2, and DcoB = SUPER_1
 
 ## For *D. pachys*:
 
-The .bash file describes using ```samtools_depth_output_simplifier_v4.py``` to extract read depth data for the terminal 80,000 bp of DpaA and DpaB, the ranges specified in ```Dpa_chromosome_ranges.txt```. Read depth values are reported every 10 bp (-w 10 in ```samtools_depth_output_simplifier_v4.py```).
+The ```Dpa_get_subtelomeric_read_depths.bash``` file describes using ```samtools_depth_output_simplifier_v4.py``` to extract read depth data for the terminal 80,000 bp of DpaA and DpaB, the ranges specified in ```Dpa_chromosome_ranges.txt```. Read depth values are reported every 10 bp (-w 10 in ```samtools_depth_output_simplifier_v4.py```).
 
 NB. "scaffold_1" and "scaffold_2" were the names of DpaA and DpaB respectively in an earlier draft assembly. This assembly had an error in DpaB, which meant the coordinates on the right end were 2364 bp off. Other than a coordinate change, this had no bearing on the analysis of subtelomeric repeats.
 
