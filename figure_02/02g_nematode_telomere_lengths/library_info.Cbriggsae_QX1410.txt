@@ -1,4 +1,0 @@
-accession	SRR17074503
-species	C. briggsae
-strain	QX1410
-description	C. briggsae QX1410 sequencing (Stevens 2022)
