@@ -1,4 +1,4 @@
-**Read depths at the *D. pachys* subtelomere**
+**Read depths at the *D. pachys* and *D. coronatus* subtelomere**
 
 Requires the ```samtools depth``` output from **Fig. 1E** (*D. coronatus*) and **Fig. 1F** (*D. pachys*).
 
