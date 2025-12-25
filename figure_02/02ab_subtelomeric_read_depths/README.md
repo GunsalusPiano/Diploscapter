@@ -2,7 +2,8 @@
 
 Requires the ```samtools depth``` output from **Fig. 1E** (*D. coronatus*) and **Fig. 1F** (*D. pachys*).
 
-For *D. pachys*:
+
+**For *D. pachys***:
 
 The .bash file describes using ```samtools_depth_output_simplifier_v4.py``` to extract read depth data for the terminal 80,000 bp of DpaA and DpaB.
 
