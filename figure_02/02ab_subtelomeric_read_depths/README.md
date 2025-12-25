@@ -5,7 +5,7 @@ Requires the ```samtools depth``` output from **Fig. 1E** (*D. coronatus*) and *
 ## For *D. coronatus*:
 The ```Dco_get_subtelomeric_read_depths.bash``` file describes using ```samtools_depth_output_simplifier_v4.py``` to extract read depth data for the terminal 40,000 bp of DcoA and DcoB, the ranges specified in ```Dco_chromosome_ranges.txt```. Read depth values are reported every 10 bp (-w 10 in ```samtools_depth_output_simplifier_v4.py```).
 
-NB. At the time of assembly, DcoA was given the name SUPER_2, and DcoB = SUPER_1.
+NB. At the time of assembly, DcoA was given the name "SUPER_2", and DcoB = "SUPER_1".
 
 ## For *D. pachys*:
 
