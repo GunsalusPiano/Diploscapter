@@ -1,4 +1,4 @@
-All relevant code to generate Figure 1 for Chung & al (2025).
+# The genome assemblies of *D. coronatus* and *D. pachys*
 
 Figures 1a and 1b were drawn using Adobe Illustrator.
 Figures 1c and 1d were drawn using hicplotmatrix (from hicexplorer), and marked up using Adobe Illustrator.
