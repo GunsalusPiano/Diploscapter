@@ -14,4 +14,7 @@ TeloSearchLR.py -f nxDipCoro1_hifi.fasta -k 4 -K 20 -t 1000 -n 1000 -m 1 -M 100 
 TeloSearchLR.py -s TAAGGGTAAGGC -T TeloSearchLR.k4.K20.nxDipCoro1_hifi.TideHunterTable.txt -f nxDipCoro1_hifi.fasta -n 1000
 TeloSearchLR.py -s TAAGGG -T TeloSearchLR.k4.K20.nxDipCoro1_hifi.TideHunterTable.txt -f nxDipCoro1_hifi.fasta -n 1000
 
+# Rename the txt files with the occupancy data with the species abbreviations.
+# eg. TAAGGG.occupancy.n1000.all.bar.txt > Dpa.TAAGGG.occupancy.n1000.all.bar.txt
 # The occupancy data are ready to be graphed using R ggplot2.
+
