@@ -4,6 +4,6 @@ Here, the *Diploscapter* telomeric repeat motif was found using TeloSearchLR ([C
 
 To graph the telomeric repeat occupancies at the ends of reads:
 1. Run TeloSearchLR.py on both *D. pachys* and *D. coronatus* long reads. The commands are in ```TeloSearchLR_Dpa_commands.bash```.
-2. With the occupancy data (tabular text files), run the R code in ```Fig2DE.md```. Output in ```diploscapter_telomeric_motifs_flatter.pdf```, also screen cap below.
+2. With the occupancy data (tabular text files), run the R code in ```Fig2DE.md```. Output in ```diploscapter_telomeric_motifs_flatter.pdf```, also in screen cap below.
 <img width="1004" height="906" alt="image" src="https://github.com/user-attachments/assets/7b729c03-686d-4bb2-b3c1-0e2bc61cca23" />
 3. Move the figure to Adobe Illustrator for light editing for clarity.
