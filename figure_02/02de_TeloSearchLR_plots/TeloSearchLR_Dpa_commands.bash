@@ -10,6 +10,7 @@ TeloSearchLR.py -s TAAGGGTAAGGC -T TeloSearchLR.k4.K20.Dpachys_porechopped.TideH
 TeloSearchLR.py -s TAAGGG -T TeloSearchLR.k4.K20.Dpachys_porechopped.TideHunterTable.txt -f Dpachys_porechopped.fasta -n 1000
 
 # Do the same with Dcoronatus HiFi reads (nxDipCoro1_hifi.fasta)
+# (TAAGGGTAAGGC is the 25th most frequently found pattern in the terminal 1000 bp of reads)
 TeloSearchLR.py -f nxDipCoro1_hifi.fasta -k 4 -K 20 -t 1000 -n 1000 -m 1 -M 100 -c 10
 TeloSearchLR.py -s TAAGGGTAAGGC -T TeloSearchLR.k4.K20.nxDipCoro1_hifi.TideHunterTable.txt -f nxDipCoro1_hifi.fasta -n 1000
 TeloSearchLR.py -s TAAGGG -T TeloSearchLR.k4.K20.nxDipCoro1_hifi.TideHunterTable.txt -f nxDipCoro1_hifi.fasta -n 1000
@@ -17,4 +18,5 @@ TeloSearchLR.py -s TAAGGG -T TeloSearchLR.k4.K20.nxDipCoro1_hifi.TideHunterTable
 # Rename the txt files with the occupancy data with the species abbreviations.
 # eg. TAAGGG.occupancy.n1000.all.bar.txt > Dpa.TAAGGG.occupancy.n1000.all.bar.txt
 # The occupancy data are ready to be graphed using R ggplot2.
+
 
