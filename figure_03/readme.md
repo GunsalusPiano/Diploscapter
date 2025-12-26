@@ -9,6 +9,6 @@ The chromosome-to-chromosome alignment was performed using nucmer (from [mummer]
 - The Python script
   - runs chromosome-to-chromosome nucmer comparisons, ignoring self-to-self alignment.
   - uses the ```delta-filter``` program to eliminate spurious alignments, with the -l flag set at 10000.
-  - interprets the resulting .delta file, then outputs a more human-readable tabular file that lists the start and end coordinates of the alignment query and reference.
-- 
+  - interprets the resulting .delta file, then outputs a more human-readable tabular file (.coords) that lists the start and end coordinates of the alignment query and reference.
+- the R code in ```Diploscapter_collinearity.md``` was used to produce the alignment dotplots.
 
