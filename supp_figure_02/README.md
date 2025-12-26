@@ -1,6 +1,8 @@
 # Supplemental Figure 2: *D. coronatus* telomeric sequences are added to various points along the most distal subtelomeric repeat unit.
 
 Run the Diploscapter_coronatus_telomere_gggenomes_visualization_2025-12-16.py code. This code requires the ```*sorted.coords```, ```*.telOccupancyDrop.txt```, and ```*.telomereScore20.fasta``` files generated for **Fig. 2G**.
+- ```*.sorted.coords``` contains the coordinates of subtelomeric repeat units, sorted by their positions on the sequencing reads.
+- ```*.telOccupancyDrop.txt``` contains the position of the most disstal subtelomeric repeat unit, and how it compares with the drop in the occupancy of TAAGG[G/C] repeats on the sequencing reads.
 
 ```bash
 python3 Diploscapter_coronatus_telomere_gggenomes_visualization_2025-12-16.py
