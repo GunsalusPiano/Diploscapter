@@ -12,3 +12,8 @@ python3 repeat_nucmer_and_delta_simplified_dotplot_prep.py -f list_of_FASTAs.txt
   - interprets the resulting .delta file, then outputs a more human-readable tabular file (.coords) that lists the start and end coordinates of the alignment query and reference.
 - the R code in ```Diploscapter_collinearity.md``` was used to produce the alignment dotplots.
 
+
+The resulting matrix of dot plots below.
+<img width="915" height="913" alt="image" src="https://github.com/user-attachments/assets/27efbc14-a219-49ea-916c-bdf3e9167ca9" />
+
+
