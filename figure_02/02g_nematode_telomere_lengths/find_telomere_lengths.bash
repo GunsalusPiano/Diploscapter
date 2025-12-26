@@ -36,11 +36,11 @@ python3 worm_telomere_lengths_extractor_v3.py -a SRR17074503 -t TTAGGC -n 1000 -
 
 
 # for Diploscapter, the worm_telomere_lengths_extractor_v3.py has an -r flag that enables the search for repetitive subtelomeres - as is the case in D. pachys and D. coronatus.
-# for D. pachys, we used the Porechopped D. pachys PF1309 ONT R9.4 genomic reads.
+# for D. pachys, we used the Porechopped D. pachys PF1309 ONT R9.4 genomic reads (-l Dpachys_porechopped.fasta)
 # the -T flag specifies that the telomeric motifs are TAAGGG and TAAGGC, rather than the TAAGGGTAAGGC that TideHunter used to find tandem repeats.
 python3 worm_telomere_lengths_extractor_v3.py -l Dpachys_porechopped.fasta -t TAAGGGTAAGGC -n 1000 -c 20 -s Dpa_subtelomeres.fasta -w 20 -d 50 -T TAAGGG,TAAGGC -i library_info.Dpachys.txt -r
 
-# for D. coronatus, we used the D. coronatus PDL0010 PacBio HiFi reads.
+# for D. coronatus, we used the D. coronatus PDL0010 PacBio HiFi reads (-l nxDipCoro1_hifi.fasta).
 python3 worm_telomere_lengths_extractor_v3.py -l nxDipCoro1_hifi.fasta -t TAAGGGTAAGGC -n 1000 -c 20 -s Dco_subtelomeres.fasta -w 20 -d 50 -T TAAGGG,TAAGGC -i library_info.Dcoronatus.txt -r
 
 # concatenate all the telomere lengths results
