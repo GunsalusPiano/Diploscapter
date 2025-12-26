@@ -6,4 +6,4 @@
   - use ```bam2pairs``` from pairix v0.3.8 (https://github.com/4dn-dcic/pairix) to turn .bam to .pairs
   - use ```juicer_tools pre``` from juicer_tools v1.22.01 (https://github.com/aidenlab/JuicerTools) to turn .pairs into .hic for initial visualization
   - use ```hicConvertFormat``` from hicexplorer v3.7.5 (https://github.com/deeptools/HiCExplorer) to generate publication-ready Hi-C matrix plot
-  - use '''hicPCA``` from hicexplorer to do principal component analysis on the Hi-C matrix (for **Fig. 4B**)
+  - use ```hicPCA``` from hicexplorer to do principal component analysis on the Hi-C matrix (for **Fig. 4B**)
