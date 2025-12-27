@@ -1,3 +1,10 @@
 # Principal components in the *Diploscapter* contact data
 
-The ```04b_HiC_PoreC_PCA.bash``` file contains the run commands to get the PCs for contact data using hicexplorer (https://hicexplorer.readthedocs.io/en/latest/). For *D. pachys*, this involves an additional step: as the homozygous region of the genome is represented only once in the assembly, the read depth in this region is doubled. I include the ```Dpa-canu-het00c-YaHS-v202304-hethomosep_PoreC_correction.py``` script to re-map reads mapping to the homozygous region to either DpaA or DpaB.
+For *D. coronatus*:
+- The ```04b_HiC_PoreC_PCA.bash``` file contains the run commands to get the PCs for contact data using hicexplorer (https://hicexplorer.readthedocs.io/en/latest/).
+- PC1 was used for both DcoA and DcoB
+
+For *D. pachys*:
+- First, the .pairs file from the PoreC Snakemake pipeline was modified such that reads mapping to the homozygous region (identical between DpaA and DpaB) was reassigned to *either* DpaA or DpaB. This was done with ```Dpa-canu-het00c-YaHS-v202304-hethomosep_PoreC_correction.py```. The process is described in more detail in ```2023-05-04_D_pachys_Pore_C_transformation.pdf```.
+- Then, the re-assigned .pairs file was turned into .hic and .cool for visualization and PCA. Commands in ```04b_HiC_PoreC_PCA.bash```
+
