@@ -1,0 +1,40 @@
+# fragment	orientation
+# Nigon A-X fusion
+a	+
+space
+h	-
+space
+b	-
+space
+space
+space
+# Nigon D
+f	-
+space
+d	-
+space
+l	+
+space
+j	+
+space
+space
+space
+# Nigon E
+i	-
+space
+m	-
+space
+space
+space
+# Nigon B-C-N fusion
+g	+
+space
+n	-
+space
+e	+
+space
+k	+
+space
+c	-
+space
+o	+

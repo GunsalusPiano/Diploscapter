@@ -1,0 +1,17 @@
+#DpaA 
+#chromosome	start	end	segment
+scaffold_1	1 	7000000 	a
+scaffold_1	7000001 	13000000 	b
+scaffold_1	13000001 	27000000 	c
+scaffold_1	27000001 	32000000 	d
+scaffold_1	32000001 	36000000 	e
+scaffold_1	36000001 	37000000 	f
+scaffold_1	37000001 	37500000 	g
+scaffold_1	37500001 	48000000 	h
+scaffold_1	48000001 	53000000 	i
+scaffold_1	53000001 	55500000 	j
+scaffold_1	55500001 	61500000 	k
+scaffold_1	61500001 	65500000 	l
+scaffold_1	65500001 	73000000 	m
+scaffold_1	73000001 	78000000 	n
+scaffold_1	78000001 	85000000 	o
