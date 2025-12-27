@@ -11,6 +11,7 @@ We turn to nucmer ([mummer suite](https://github.com/mummer4/mummer)) again for 
 Prep work:
 - transcript sequences, by chromosome (DpaA, DpaB, DcoA, DcoB).
 - Protein sequences, by chromosome.
+
 For both,  also include CDSs from _C. elegans_ (from WormBase WS285) as an outgroup for analyses.
 
 The Python script ```chromosome_wide_MSA_of_BUSCOs_2024-01-02_update.py``` takes care of the following steps
