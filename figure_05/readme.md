@@ -9,7 +9,7 @@ We turn to nucmer ([mummer suite](https://github.com/mummer4/mummer)) again for 
 
 ## RAxML analysis
 Prep work:
-- transcript sequences, by chromosome (DpaA, DpaB, DcoA, DcoB).
+- Transcript sequences, by chromosome (DpaA, DpaB, DcoA, DcoB).
 - Protein sequences, by chromosome.
 
 For both, also include data from _C. elegans_ (from WormBase WS285) as an outgroup for these analyses.
