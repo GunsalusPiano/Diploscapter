@@ -1,1 +1,3 @@
-Code to generate the repeat occupancy plot in Figure 4d.
+# Repeat annotation with RepeatScout, and quantifying fraction repeats in the genome
+
+
