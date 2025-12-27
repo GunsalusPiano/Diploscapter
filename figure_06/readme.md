@@ -5,3 +5,6 @@ The rearrangement of Nigon domains and PC3 of DpaA PoreC was accomplished by ```
 - ```Diploscapter_rearrangement_order_v3.txt``` lists the order of the domains and the orientation.
 
 The reshuffled Nigon painting map and the PC3 were plotted using the R code in ```reshuffled_features_visualizations_2025-12.md```.
+
+## Other panels
+Other panels were drawn in Microsoft PowerPoint or Adobe Illustrator.
