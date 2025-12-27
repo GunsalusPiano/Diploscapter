@@ -18,7 +18,7 @@
 # Occupancy (repetitive_DNA/all_DNA) is calculated for every 100,000-bp interval, and plotted at %100000 = 50,000 bp.
 #
 # arguments:
-#     -f: scaffold_1.fasta is DpaA scaffold, scaffold_2.fasta is the DpaB scaffold
+#     -f: scaffold_1.fasta = DpaA, scaffold_2.fasta = DpaB. Repeat libraries were generated separately per chromosome.
 #     -p: output file prefix.
 #     -l: l-mer table constructed by RepeatScout (=14).
 #     -t: the threshold of repeat occurrence to consider (=5).
@@ -29,7 +29,7 @@
 #     RepeatScout in PATH
 #     RepeatMasker in PATH
 #
-# Each D. pachys chromosome is analyzed separately, so the -f parameter has the two D. pachys scaffolds listed separated by a comma
+# Each D. pachys chromosome is analyzed separately, so the -f parameter has the individual D. pachys scaffolds listed separated by a comma
 python3 RepeatScout_repeat_occupancy_table.py -f scaffold_1.fasta,scaffold_2.fasta -p Dpac -l 14 -t 5 -w 100000 -i 100000
 
 ##################################################################
@@ -39,3 +39,4 @@ python3 RepeatScout_repeat_occupancy_table.py -f scaffold_1.fasta,scaffold_2.fas
 # Same as above, but with D. coronatus scaffolds SUPER_1.fasta (DcoB) and SUPER_2.fasta (DcoA).
 
 python3 RepeatScout_repeat_occupancy_table.py -f SUPER_1.fasta,SUPER_2.fasta -p Dcor -l 14 -t 5 -w 100000 -i 100000
+
