@@ -28,11 +28,14 @@
 # requires:
 #     RepeatScout in PATH
 #     RepeatMasker in PATH
-python3 RepeatScout_repeat_occupancy_table.py -f Dpac.genomic.fasta -p Dpac -l 14 -t 5 -w 100000 -i 100000
+#
+# Each D. pachys chromosome is analyzed separately, so the -f parameter has the two D. pachys scaffolds listed separated by a comma
+python3 RepeatScout_repeat_occupancy_table.py -f scaffold_1.fasta,scaffold_2.fasta -p Dpac -l 14 -t 5 -w 100000 -i 100000
 
 ##################################################################
 # RepeatScout analysis of D. coronatus nuclear genome            #
 ##################################################################
 #
 # Same as above, but with D. coronatus scaffolds SUPER_1.fasta (DcoB) and SUPER_2.fasta (DcoA).
-python3 RepeatScout_repeat_occupancy_table.py -f Dcor.genomic.fasta -p Dcor -l 14 -t 5 -w 100000 -i 100000
+
+python3 RepeatScout_repeat_occupancy_table.py -f SUPER_1.fasta,SUPER_2.fasta -p Dcor -l 14 -t 5 -w 100000 -i 100000
