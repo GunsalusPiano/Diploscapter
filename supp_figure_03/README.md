@@ -6,7 +6,7 @@ Run the ```Diploscapter_pachys_telomere_gggenomes_visualization_2025-12-16.py```
 - ```*.telomereScore20.fasta``` contains the likely telomeric reads, in FASTA format.
 
 
-To run,
+Running the script:
 ```bash
 python3 Diploscapter_coronatus_telomere_gggenomes_visualization_2025-12-16.py
 ```
