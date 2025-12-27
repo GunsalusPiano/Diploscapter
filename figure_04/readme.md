@@ -8,3 +8,6 @@ The ancestral linkage groups mapped to the the *Diploscapter* chromosomes, and s
   - Plot with R ggplot2
 - Panel D: custom Python script uses RepeatScout + RepeatMasker for repeat annotations. Plotting with R ggplot2.
 - Panels C, E, F: bioinformatic analyses done with Python scripts. Plotting with R ggplot2. 
+
+The data produced from the analyses were plotted using R code in ```genomic_features_visualizations.md```, with the final output below.
+<img width="1488" height="894" alt="image" src="https://github.com/user-attachments/assets/d55ea717-5272-4917-97ec-a4fe40943965" />
