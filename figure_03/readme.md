@@ -16,4 +16,4 @@ python3 repeat_nucmer_and_delta_simplified_dotplot_prep.py -f list_of_FASTAs.txt
 The resulting matrix of dot plots below.
 <img width="915" height="913" alt="image" src="https://github.com/user-attachments/assets/27efbc14-a219-49ea-916c-bdf3e9167ca9" />
 
-Adobe Illustrator was used to draw the chromosome cartoons for clarity.
+Adobe Illustrator was used to draw the chromosome cartoons.
