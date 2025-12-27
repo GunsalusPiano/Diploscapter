@@ -12,10 +12,14 @@ Prep work:
 - transcript sequences, by chromosome (DpaA, DpaB, DcoA, DcoB).
 - Protein sequences, by chromosome.
 
-For both,  also include CDSs from _C. elegans_ (from WormBase WS285) as an outgroup for analyses.
+For both, also include data from _C. elegans_ (from WormBase WS285) as an outgroup for these analyses.
 
 The Python script ```chromosome_wide_MSA_of_BUSCOs_2024-01-02_update.py``` takes care of the following steps
-- Fetch "Complete" orthologs from the BUSCO table (data from **Fig. 4A**).
+- Fetch "Complete" orthologs from the BUSCO table (data from **Fig. 4A**) - that is, the ortholog of the BUSCO exists on the chromosome/genome.
 - Align the protein sequences of the BUSCO orthologs using [MUSCLE](https://github.com/rcedgar/muscle).
 - Turn the amino acid alignments into CDS alignment
-- Run modeltest-ng to see 
+- Concatenates all the CDS alignments
+- Run [modeltest-ng](https://github.com/ddarriba/modeltest) to test the best fit model for nucleotide evolution
+- Run [RAxML-ng](https://github.com/amkozlov/raxml-ng) using the models determined above.
+
+Furthermore, the script considers the Dpa homozygous region separately from the heterozygous region. At the end of the runs there should be *.raxml.support files (RAxML trees with bootstrap support, 300 replicates for the homozygous region, 1000 replicates for the heterozygous region). 
