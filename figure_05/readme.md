@@ -19,7 +19,7 @@ The Python script ```chromosome_wide_MSA_of_BUSCOs_2024-01-02_update.py``` takes
 - Align the protein sequences of the BUSCO orthologs using [MUSCLE](https://github.com/rcedgar/muscle).
 - Turn the amino acid alignments into CDS alignment
 - Concatenates all the CDS alignments
-- Run [modeltest-ng](https://github.com/ddarriba/modeltest) to test the best fit model for nucleotide evolution
+- Run [modeltest-ng](https://github.com/ddarriba/modeltest) to test the best fit model for nucleotide evolution. First, second and third nucleotides of codons are considered separately.
 - Run [RAxML-ng](https://github.com/amkozlov/raxml-ng) using the models determined above.
 
 Furthermore, the script considers the Dpa homozygous region separately from the heterozygous region. At the end of the runs there should be *.raxml.support files (RAxML trees with bootstrap support, 300 replicates for the homozygous region, 1000 replicates for the heterozygous region). 
