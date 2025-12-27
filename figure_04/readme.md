@@ -6,4 +6,5 @@ The ancestral linkage groups mapped to the the *Diploscapter* chromosomes, and s
   - Analysis done with hicPCA from [HiCExplorer](https://github.com/deeptools/HiCExplorer). For _D. pachys_, an additional step was required to reassign PoreC reads mapping to the homozygous region to either DpaA or DpaB.
   - Convert .bed format into x, y coordinates
   - Plot with R ggplot2
-- Panels C-F: bioinformatic analyses done with Python scripts. Plotting with R ggplot2. 
+- Panel D: custom Python script uses RepeatScout + RepeatMasker for repeat annotations. Plotting with R ggplot2.
+- Panels C, E, F: bioinformatic analyses done with Python scripts. Plotting with R ggplot2. 
