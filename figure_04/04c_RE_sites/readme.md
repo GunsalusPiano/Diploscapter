@@ -4,4 +4,4 @@ The purpose of looking for restriction sites used by Arima Hi-C and Pore-C is to
 - The search for NlaIII sites on DpaA and DpaB was done using ```fraction_small_palindrome_along_length.py```, which finds palindromes in sequence FASTAs.
 - The search for Arima's RE sites on DcoA and DcoB was done using ```fraction_small_multiseq_along_length.py```, with the specific restriction sites listed in ```Arima_HiC_restriction_sites.txt```.
 
-The commands to run these scripts are in the .bash file. Plotting of the resulting data was done with the R ggplot2 code in ```genomic_features_visualizations.md``` in the main **Fig. 4** folder.
+The commands to run these scripts are in the ```04c_RE_sites.bash``` file. Plotting of the resulting data was done with the R ggplot2 code in ```genomic_features_visualizations.md``` in the main **Fig. 4** folder.
