@@ -12,5 +12,6 @@ python3 Diploscapter_traits_inside_outisde_HFCs_v4.py
 ````
 
 The results are stored in ```Diploscapter.exons.data.txt```, ```Diploscapter.GC_content.data.txt```, ```Diploscapter.RE.data.txt```, and ```Diploscapter.repeats.data.txt```. The R code in ```significance_of_HFC_values.md``` generates box-and-whisker plots from these results, and determines the statistical significance.
+
 <img width="642" height="851" alt="image" src="https://github.com/user-attachments/assets/48cbf9f4-84de-48ff-ac6a-fef0adcaa5a6" />
 
