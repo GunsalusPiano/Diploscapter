@@ -5,7 +5,16 @@
   ```{bash}
   python3 fraction_RepeatScout_repeats_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -w 100000 -i 100000 -p Pexsp
   ```
-- Fraction exonic ```{bash}python3 fraction_exonic_DNA_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -g exspectatus_canonical.gff3 -p Pexsp -w 100000 -i 10000```
-- Fraction GC ```{bash}python3 fraction_GC_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -p Pexsp -w 100000 -i 100000```
-- BUSCO search ```{bash}busco -i exspectatus_nr_proteins.fa -l nematoda_odb10 -o Pexspectatus_protein_busco -m prot -c 14```
+- Fraction exonic
+  ```{bash}
+  python3 fraction_exonic_DNA_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -g exspectatus_canonical.gff3 -p Pexsp -w 100000 -i 10000
+  ```
+- Fraction GC
+  ```{bash}
+  python3 fraction_GC_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -p Pexsp -w 100000 -i 100000
+  ```
+- BUSCO search
+  ```{bash}
+  busco -i exspectatus_nr_proteins.fa -l nematoda_odb10 -o Pexspectatus_protein_busco -m prot -c 14
+  ```
 
