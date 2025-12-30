@@ -1,6 +1,6 @@
 # Chromosome center and arm characteristics for P. exspectatus, showing typical Rhabditid chromosome arm-center differentiation.
 
-*Pristionchus exspectatus* genome assembly and annotations can be found at [Pristionchus.org/download](http://pristionchus.org/download/) (linked under "*P. exspectatus* from Yoshida *et al. Nature Evol. Ecology.* 2023). I prepared the data for analysis by having a genomic FASTA of only the nuclear chromosomes ("Pexspectatus_nuclear_genome.fasta"). I used the annotations ("exspectatus_canonical.gff3") and the protein FASTA ("exspectatus_nr_proteins.fa") as provided on Pristionchus.org. The *P. exspectatus* Hi-C mapping data were provided by Kohta Yoshida and used with permission in the manuscript.
+*Pristionchus exspectatus* genome assembly and annotations can be found at [Pristionchus.org/download](http://pristionchus.org/download/) (linked under "*P. exspectatus* from Yoshida *et al. Nature Evol. Ecology.* 2023). I prepared the data for analysis by having a genomic FASTA of only the nuclear chromosomes ("Pexspectatus_nuclear_genome.fasta"). I used the annotations ("exspectatus_canonical.gff3") and the protein FASTA ("exspectatus_nr_proteins.fa") as provided on Pristionchus.org. The *P. exspectatus* Hi-C mapping data were provided by Kohta Yoshida and used with permission in the manuscript. Most of the scripts used below can be found under **Fig. 4**.
 - Fraction repeats:
   ```{bash}
   python3 fraction_RepeatScout_repeats_along_length_v2.py -f Pexspectatus_nuclear_genome.fasta -w 100000 -i 100000 -p Pexsp
