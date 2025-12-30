@@ -22,4 +22,6 @@
   python3 BUSCO_protein_full_table_to_BUSCO_genomic_full_table_Pexsp_Yoshida_version.py
   ```
   
-The data were plotted by running the R code in ```supp_figure_2024-12-28.md```
+The data were plotted by running the R code in ```supp_figure_2024-12-28.md```, with the resulting plots below.
+<img width="1170" height="931" alt="image" src="https://github.com/user-attachments/assets/d7c34ab3-4aa3-4745-96cf-c94df863ce13" />
+
