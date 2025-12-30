@@ -17,4 +17,9 @@
   ```{bash}
   busco -i exspectatus_nr_proteins.fa -l nematoda_odb10 -o Pexspectatus_protein_busco -m prot -c 14
   ```
+  then use the python script below to turn the protein busco table into the genomic equivalent.
+  ```{bash}
+  python3 BUSCO_protein_full_table_to_BUSCO_genomic_full_table_Pexsp_Yoshida_version.py
+  ```
+  
 
